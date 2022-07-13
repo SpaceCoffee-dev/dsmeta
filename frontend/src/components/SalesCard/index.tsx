@@ -1,5 +1,7 @@
-import './styles.css'
 import SendMessageButton from '../SendMessageButton'
+import DatePicker from "react-datepicker"
+import "react-datepicker/dist/react-datepicker.css"
+import './styles.css'
 
 function SalesCard() {
     return (
@@ -9,11 +11,17 @@ function SalesCard() {
                 <div className="card-box-input">
                     <div className="card-input">
                         <label htmlFor="dtInicio">Data de Inicio</label>
-                        <input type="text" name="dtInicio" placeholder="Digite uma data inicial" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            dateFormat="dd/MM/yyyy" />
                     </div>
                     <div className="card-input">
                         <label htmlFor="dtTermino">Data de Término</label>
-                        <input type="text" name="dtTermino" placeholder="Digite uma data de termino" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            dateFormat="dd/MM/yyyy" />
                     </div>
                 </div>
                 <div className="card-table">
