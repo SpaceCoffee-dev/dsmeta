@@ -2,8 +2,18 @@ import SendMessageButton from '../SendMessageButton'
 import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css"
 import './styles.css'
+import { useState } from 'react'
 
 function SalesCard() {
+
+    var min = new Date();
+    var max = new Date();
+
+    min.setDate(max.getDate() - 365);
+
+    var [minDate, setMinDate] = useState(min);
+    var [maxDate, setMaxDate] = useState(max);
+
     return (
         <>
             <div className="card">
@@ -12,15 +22,15 @@ function SalesCard() {
                     <div className="card-input">
                         <label htmlFor="dtInicio">Data de Inicio</label>
                         <DatePicker
-                            selected={new Date()}
-                            onChange={(date: Date) => { }}
+                            selected={minDate}
+                            onChange={(date: Date) => setMinDate(date)}
                             dateFormat="dd/MM/yyyy" />
                     </div>
                     <div className="card-input">
                         <label htmlFor="dtTermino">Data de Término</label>
                         <DatePicker
-                            selected={new Date()}
-                            onChange={(date: Date) => { }}
+                            selected={maxDate}
+                            onChange={(date: Date) => setMaxDate(date)}
                             dateFormat="dd/MM/yyyy" />
                     </div>
                 </div>
