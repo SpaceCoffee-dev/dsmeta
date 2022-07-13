@@ -1,0 +1,35 @@
+.btn-send {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid var(--color-theme);
+}
+
+.btn-send:hover {
+    cursor: pointer;
+    background-color: var(--color-theme);
+    color: var(--dark-text-color);
+}
+
+.btn-send:hover svg path {
+    fill: var(--dark-text-color);
+}
+
+.btn-send .img-btn {
+    width: 100%;
+}
+
+/* Dark Theme */
+
+body.dark .btn-send{
+    background-color: var(--primary-color);
+    border: none;
+}
+
+body.dark .btn-send:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+}

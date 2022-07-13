@@ -32,3 +32,9 @@ body{
 
     --color-theme: #3627D8;
 }
+
+/* Dark Theme */
+body.dark{
+    color: var(--dark-text-color);
+    background-color: var(--dark-primary-color);
+}
