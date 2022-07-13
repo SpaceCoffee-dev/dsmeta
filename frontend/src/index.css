@@ -38,3 +38,22 @@ body.dark{
     color: var(--dark-text-color);
     background-color: var(--dark-primary-color);
 }
+
+/* Button Wrapper */
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Querie */
+@media(min-width:576px){
+    .show-md{
+        display: table-cell;
+    }
+}
+
+@media(min-width:996px){
+    .show-lg{
+        display: table-cell;
+    }
+}

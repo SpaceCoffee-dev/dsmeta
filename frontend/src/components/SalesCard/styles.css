@@ -1,0 +1,89 @@
+.card{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.card .card-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.card .card-box-input{
+    max-width: 600px;
+    width: 100%;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.card .card-box-input .card-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+}
+
+.card .card-box-input .card-input input{
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+.card .card-box-input .card-input input:focus{
+    outline-color: var(--color-theme);
+}
+
+.card .card-box-input .card-input label{
+    font-size: 14px;
+    margin: 8px 0;
+    font-weight: var(--font-bold);
+}
+
+.card .card-table table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.card .card-table table thead{
+    height: 55px;
+    font-size: 16px;
+    font-weight: var(--font-bold);
+    color: var(--text-color);
+}
+
+.card .card-table table tbody{
+    font-size: 14px;
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+}
+
+.card .card-table table tbody tr{
+    height: 55px;
+}
+
+.card .card-table table tbody tr:nth-child(odd){
+    background-color: var(--secondary-color);
+}
+
+.card .card-table table tbody tr:hover > td{
+    background-color: var(--secondary-hover-color);
+}
+
+/* Media Querie */
+@media(min-width:576px){
+    .card .card-box-input .card-input{
+        width: 47%;
+        float: left;
+    }
+
+    .card .card-box-input .card-input:last-child{
+        margin-left: 3%;
+    }
+}

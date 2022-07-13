@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header .img-header{
+    width: 235px;
+    margin-bottom: 10px;
+}
+
+.header .title-header{
+    font-size: 23px;
+    margin: 0;
+}
+
+.header .subtitle-header{
+    font-size: 14px;
+    font-weight: var(--font-medium);
+    margin: 0;
+}
+
+/* Dark Theme */
+body.dark .header{
+    color: var(--dark-text-color);
+}
